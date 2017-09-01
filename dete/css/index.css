@@ -1,0 +1,393 @@
+body {
+  font-family: 'Microsoft Yahei'!important;
+}
+.bar_menu {
+  display: none;
+}
+.bar_item {
+  position: relative;
+}
+.dropdown-menu > ul .tit label:hover,.dropdown-menu > ul .tit a:hover {
+  color: #45C1E7!important;
+}
+.dropdown-menu > ul .tit {
+  margin-bottom: 10px;
+}
+.dropdown-menu > ul .titl a {
+  display: inline-block;
+  padding: 2px 0;
+  font-size: 14px;
+  margin-left: 40px;
+}
+.bar_item:hover > a,.bar_item:active > a {
+  color: #45C1E7!important;
+}
+.bar_item:hover > .bar_menu {
+  display: block!important;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.navbar-default .navbar-toggle{
+  margin-top:0;
+}
+.bar_item:hover:after,.bar_item:active:after{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  height: 2px;
+  width: 40px;
+  margin: auto;
+  content: '';
+  background-color: #45C1E7;
+}
+.bar_item:hover .titl:active a {
+  color: #45C1E7!important;
+}
+.bar_first:hover:after {
+  height: 0;
+}
+.bar_cn {
+  margin-bottom: 5px;
+}
+.footer_copyright{
+  height: 55px;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.wrapper{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.navbar-header{
+  margin-top: 17px;
+}
+.footer_left_icon{
+  display:inline-block;
+  margin-right:5px;
+  width:20px;
+  height:20px;
+  cursor:pointer;
+}
+.row{
+    width: 1000px;
+    margin: auto;
+    padding-top: 120px;
+}
+footer .row{
+  padding-top:0;
+}
+.show{
+    width: 85%;
+    margin: auto;
+}
+.product_Box{
+  width:100%;
+}
+.product_item{
+  width:23%;
+  float: left;
+  margin-right:2%;
+}
+.product_item:last-child{
+  margin-right:0;
+}
+.main{
+  padding: 120px 20px 50px;
+  margin:0 auto;
+  max-width:1000px;
+}
+.inside{
+  background-color:#fff;
+  padding:0;
+}
+.inside img,#content img{
+  display:block;
+  width:100%;
+  margin-bottom:2%;
+}
+#sidebar{
+  float: left;
+  width: 20%;
+  margin-right: 3%;
+  max-width:none;
+}
+#content{
+  float: left;
+  width: 77%;
+  max-width:none;
+}
+.right_Btn{
+  position: absolute;
+  right:10px;
+  top:25px;
+  list-style:none;
+}
+#telMsgOpen,#userMsgOpen,#searchMsgOpen{
+  position: absolute;
+  top:40px;
+}
+#telMsgOpen{
+  left:-30px;
+}
+#userMsgOpen{
+  left:0px;
+}
+#searchMsgOpen{
+  left:35px;
+}
+.right_Btn>li{
+  margin-right:15px;
+}
+.container{
+  position: relative;
+  max-width: 1000px;
+}
+.right_Btn li>a{
+  display:block;
+}
+.dropdown-menu > ul .titl a{
+  color:#e2e2e2;
+}
+.rightIcon{
+  margin-left:11px!important;
+}
+hr{
+  margin-left: 10%;
+  border-top: 1px solid #aaa;
+  margin-right: 24%;
+}
+.rightSolution{
+  margin-top:10%;
+}
+.text-muted{
+  font-size: 18px;
+}
+.product_01 label, .product_02 label, .product_03 label, .product_04 label{
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.bottom_img{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+.dropdown-menu{
+  width:515px;
+}
+@media(max-width: 450px){
+    #item-1{
+      width:100%;
+      // height:300px;
+      // padding-top:57px;
+      // margin-top: 58px;
+      padding-top: 0;
+      height: 114px;
+    }
+    .navbar-header{
+      margin:0;
+    }
+    .navbar-toggle{
+        padding: 5px;
+        margin-right: 0px;
+    }
+    .logo{
+      height: 25px!important;
+      margin-top: 16px;
+    }
+    #main_ourProduct h2{
+      padding-top:30px!important;
+      font-size: 18px;
+    }
+    #earseBGImageID h2{
+      font-size: 17px;
+    }
+    #main_ourProduct h4,#earseBGImageID h4{
+      font-size: 15px;
+    }
+    .product_Container{
+      height:110px!important;
+    }
+    .product_item{
+      padding: 0 10px;
+      background-position:center;
+      width: 47%;
+      float: left;
+      margin-right: 6%;
+      height: 170px;
+      margin-bottom:10px;
+    }
+    .product_item:nth-child(2n){
+      margin-right:0;
+    }
+    .product_Box {
+      padding:10px 15px;
+      margin: auto;
+    }
+    .product_01 label, .product_02 label, .product_03 label, .product_04 label{
+      margin-top:120px;
+    }
+    .product_Container_2{
+      width:100%!important;
+    }
+    #main_ourProduct{
+      height:500px!important;
+    }
+    .row{
+      padding-top:30px;
+      width:100%;
+    }
+    .col-md-6{
+      width:50%;
+    }
+    #earseBGImageID{
+      height: 250px!important;
+      background: url(../img/earseBgImg.png);
+      background-position: center;
+      background-size: cover;
+    }
+    hr{
+      margin-right: 10%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .show{
+      margin-top:30%;
+    }
+    #earseBGImageID .col-md-6:nth-child(n){
+      width:35%;
+    }
+    #earseBGImageID .col-md-6:nth-child(2n){
+      width:65%;
+    }
+    .col-xs-12{
+      height:160px;
+      width: 33.3%;
+    }
+    .col-xs-12 li{
+      margin-top:10px;
+    }
+    .col-xs-12 li{
+      margin-top:10px;
+    }
+    .col-xs-12 ul>li:first-child>a{
+      font-size: 16px!important;
+    }
+    .footer_copyright{
+      margin-top: 10px;
+      padding: 10px;
+    }
+    footer .row{
+      padding-top:10px;
+    }
+    .text-muted{
+      text-align:left;
+      font-size: 14px;
+    }
+    .footer_copy {
+      line-height: inherit;
+      width: 75%;
+      margin: auto;
+    }
+    #topcontrol{
+      position: fixed;
+      bottom: 9px!important;
+      right: 5px;
+      cursor: pointer;
+      opacity: 1;
+    }
+    #main_menuProductAll{
+      // margin-top:58px;
+    }
+    .wrapper{
+      padding-top:58px;
+    }
+    .navbar-nav{
+      margin-left:0!important;
+    }
+    .right_Btn>li{
+      margin-bottom:15px;
+    }
+    .right_Btn{
+      top:100px;
+      z-index:1000;
+    }
+    .navbar-default .navbar-nav > li > a > .menu_t_SS{
+      margin-left:0;
+    }
+    .bar_item:hover > .bar_menu{
+      width:100%;
+    }
+    .bar_item:hover:after, .bar_item:active:after {
+      position: absolute;
+      right: inherit; 
+      left: 25px;
+    }
+    .navbar-default .navbar-toggle{
+      margin-top:15px;
+    }
+    .rightSolution{
+      margin-top:0;
+    }
+}
+@media (min-width: 460px) and (max-width: 800px){
+  .home-slider .carousel-inner > .item{
+    height:400px;
+  }
+  .product_Container{
+    height:150px!important;
+  }
+  .product_item{
+    padding: 0 10px;
+    background-position:center;
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+    height: 170px;
+    margin-bottom:3%;
+  }
+  h2{
+    padding-top:50px!important;
+  }
+  .product_item:nth-child(2n){
+    margin-right:0;
+  }
+  .product_Box {
+    padding:10px 15px;
+    margin: auto;
+  }
+  .product_01 label, .product_02 label, .product_03 label, .product_04 label{
+    margin-top:120px;
+  }
+  .product_Container_2{
+    width:100%!important;
+  }
+  .col-md-6{
+    width:40%;
+  }
+  .rightSolution{
+    margin-right:3%;
+  }
+  .rightSolution{
+    width:57%;
+    margin-top:0;
+  }
+  #earseBGImageID{
+    height:500px!important;
+  }
+  .row{
+    width:100%;
+  }
+  .right_Btn{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 30px;
+    right:inherit;
+  }
+}

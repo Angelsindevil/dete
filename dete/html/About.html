@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- <link rel="shortcut icon" href=""> -->
+
+    <title>D E T E D T</title>
+	
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!--固定悬浮导航-->
+<!--    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/default.css">-->
+   <!--copy head-->
+
+   <!--copy head end-->
+  </head>
+
+  <body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	<!--固定悬浮导航-->
+    <!--main-->
+	    <main class="clearfix">
+        
+	    	<!--sidebar-->
+	    	<aside id="sidebar">
+             <br>
+  					<br>
+  					<br>
+  					<br>
+					  <br>
+	    		<div class="inside">
+                 	
+		    		<img src="img/About/侧边栏.jpg"/>
+	    		</div>
+	    	</aside>
+	    	<!--end sidebar-->
+	    	<!--main content-->
+	    	<div class="main_content" id="content">
+	    		<img src="img/About/关于得特.jpg">
+                <br>
+                <img src="img/About/荣誉奖项.jpg">
+	    	</div>
+	    	<!--end main content-->
+	    </main>
+	    <!--end main-->
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav" style="margin-left:78px;">
+            <li class="dropdown">
+              <a onclick="onDDOSSystem(-1)" class="dropdown-toggle" data-toggle="dropdown"><label class="menu_t">首 页</label><br/><label class="menu_ti_H">Home</label></a>
+            </li>
+			       <li class="dropdown" id="dropdown-menu_product_select">
+              <a href="#" class="dropdown-toggle" onMouseOver="onProductOver()" onMouseOut="onProductOut()" data-toggle="dropdown"><label class="menu_t_p">产 品</label><br/><label class="menu_ti">Products</label></a>
+              <div class="dropdown-menu" id="dropdown-menu_product">
+                <ul style="float:left;width:250px;">
+                  <li onclick="onDDOSSystem(0)" class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">绿色数据中心基础设施</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit" onclick="onProductSystem()"><img src ="img/icon_menu.png" /><label style="cursor: pointer;">智能运维产品</label></li>
+                  <li class="titl" onclick="onDDOSSystem(0)"><a>数据中心综合运维监控管理平台</a></li>
+                  <li class="titl" onclick="onDDOSSystem(1)"><a>在线服务监控与分析系统</a></li>
+                  <li class="titl" onclick="onDDOSSystem(2)"><a>IT运维大数据分析与监控系统</a></li>
+                  <li class="titl" onclick="onDDOSSystem(3)" style="margin-bottom:20px;"><a>DDOS攻击检测与防护产品</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown" id="dropdown-menu_case_select">
+              <a href="#" class="dropdown-toggle" onMouseOver="onCaseOver()" onMouseOut="onCasetOut()" data-toggle="dropdown"><label class="menu_t">解决方案</label><br/><label class="menu_ti_S">Solution</label></a>
+               <div class="dropdown-menu" style="width:340px;" id="dropdown-menu_case">
+                <ul style="float:left;width:330px;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">绿色数据中心基础设施整体解决方案</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;margin-bottom:20px;">数据中心智能运维解决方案</label></li>
+                </ul>
+              </div>
+            </li>           
+            <li class="dropdown" id="dropdown-menu_server_select">
+              <a href="#" class="dropdown-toggle" onMouseOver="onServerOver()" onMouseOut="onServerOut()" data-toggle="dropdown"><label class="menu_t_SS">服务与支持</label><br/><label class="menu_ti" style="cursor:pointer;">Sevice & Support</label></a>
+              <div class="dropdown-menu" style="width:320px;" id="dropdown-menu_server">
+                <ul style="float:left;width:150px;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">服务介绍</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label>获取支持</label></li>
+                  <li class="titl"><a>资料库</a></li>
+                  <li class="titl"><a>软件下载</a></li>
+                  <li class="titl" style="margin-bottom:20px;"><a>建议反馈</a></li>
+                </ul>
+              </div>
+            </li> 
+            <li class="dropdown" id="dropdown-menu_com_select">
+              <a href="#" class="dropdown-toggle" onMouseOver="onComOver()" onMouseOut="onComOut()" data-toggle="dropdown"><label class="menu_t">公 司</label><br/><label style="cursor:pointer;" class="menu_ti">Detedt</label></a>
+              <div class="dropdown-menu" style="width:300px;" id="dropdown-menu_com">
+                <ul style="float:left;width:150px;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;"><a href="About_test.html" target="_self">关于我们</a></label></li>
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">联系我们</label></li>
+                  <li class="tit" style="margin-bottom:20px;"><img src ="img/icon_menu.png"/><label style="cursor:pointer;">新闻动态</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label>加入我们</label></li>
+                  <li class="tit"><img src ="img/icon_menu.png" /><label>企业文化</label></li>
+                </ul>
+              </div>
+            </li>        
+            <!-- Navbar Search -->
+            <li onMouseOver="onMenuTelOverClick()" onMouseOut="onMenuTelOutClick()" style="position: absolute;right: 210px;top:3px;"><a class="menu_tel"></a></li>
+            <li id="telMsgOpen" style="position: absolute;right: 195px;top:70px;display:none"><a class="menu_tel_msg"></a></li>
+            <li onMouseOver="onMenuUserOverClick()" onMouseOut="onMenuUserOutClick()" style="position: absolute;right: 161px;top:3px;"><a class="menu_user"></a></li>
+            <li id="userMsgOpen" style="position: absolute;right: 151px;top:70px;display:none"><a class="menu_user_msg"></a></li>
+            <li onMouseOver="onMenuSearchOverClick()" onMouseOut="onMenuSearchOutClick()" style="position: absolute;right: 120px;top:3px;"><a class="menu_search"></a></li>
+            <li id="searchMsgOpen" style="position: absolute;right: 102px;top:70px;display:none"><a class="menu_search_msg"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+    
+<!--Mix Part-->
+
+<!--Mix End-->    
+    
+ 
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+	         
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            		<ul>
+                  <li><img src="img/dt_logo.png" /></li>
+                  <li><img src="img/footer_tel.png" />&nbsp;<img src="img/footer_msg.png" />&nbsp;<img src="img/footer_address.png" /></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">关于我们</a></li>
+                  <li><a>公司概况</a></li>
+                  <li><a>荣誉奖项</a></li>
+                  <li><a>企业文化</a></li>
+                  <li><a>人才招聘</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">如何购买</a></li>
+                  <li><a>在线咨询</a></li>
+                  <li><a>申请试用</a></li>
+                  <li><a>联系我们</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">合作伙伴</a></li>
+                  <li><a>渠道政策</a></li>
+                  <li><a>合作申请</a></li>
+                  <li><a>加入我们</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">售后支持</a></li>
+                  <li><a>在线咨询</a></li>
+                  <li><a>资料库</a></li>
+                  <li><a>软件下载</a></li>
+                  <li><a>建议反馈</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">资源中心</a></h4></li>
+                  <li><a>新闻中心</a></li>
+                  <li><a>成功案例</a></li>
+                  <li><a>资料下载</a></li>
+                  <li><a>活动专题</a></li>
+                </ul>
+          </div>
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 
+        <!-- Copyright -->
+        <div class="footer_copyright">
+            <div class="footer_copy">Copyright &copy; 得特数据 2017 浙ICP备17002056号     |     Power By得特数据<div>
+        </div><!-- / .Copyright -->
+    </footer><!-- / .Footer -->
+	
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+	<!--固定悬浮导航-->        
+    <script src="js/jquery.min.js"></script>
+		<script src="js/stickySidebar.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('#sidebar').stickySidebar({
+				sidebarTopMargin: 20,
+				footerThreshold: 100
+			});
+		});
+		</script>
+        <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+  </body>
+</html>

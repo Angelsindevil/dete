@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- <link rel="shortcut icon" href=""> -->
+
+    <title>D E T E D T</title>
+	
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+<!--    <link href='http://fonts.useso.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>-->
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      #main_menuProductAll{
+        display: none;
+        min-height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top topBar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav" style="margin-left:78px;">
+            <li class="dropdown bar_item bar_first">
+              <a onclick="onDDOSSystem(-1)"><label class="menu_t bar_cn">首 页</label><br/><label class="menu_ti_H">Home</label></a>
+            </li>
+			       <li class="dropdown bar_item" id="dropdown-menu_product_select">
+              <a href="#"><label class="menu_t_p bar_cn">产 品</label><br/><label class="menu_ti">Products</label></a>
+              <div class="dropdown-menu bar_menu" id="dropdown-menu_product">
+                <ul style="float:left;width:235px;">
+                  <li onclick="onDDOSSystem(5)" class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">绿色数据中心基础设施</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit" onclick="onProductSystem()"><img src ="img/icon_menu.png" class="rightIcon"/><label style="cursor: pointer;">智能运维产品</label></li>
+                  <li class="titl" onclick="onDDOSSystem(0)"><a>数据中心综合运维监控管理平台</a></li>
+                  <li class="titl" onclick="onDDOSSystem(1)"><a>在线服务监控与分析系统</a></li>
+                  <li class="titl" onclick="onDDOSSystem(2)"><a>IT运维大数据分析与监控系统</a></li>
+                  <li class="titl" onclick="onDDOSSystem(3)" style="margin-bottom:20px;"><a>DDOS攻击检测与防护产品</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown bar_item" id="dropdown-menu_case_select">
+              <a href="#"><label class="menu_t bar_cn">解决方案</label><br/><label class="menu_ti_S">Solution</label></a>
+               <div class="dropdown-menu bar_menu" style="width:350px;" id="dropdown-menu_case">
+                <ul style="float:left;width:350px;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">绿色数据中心基础设施整体解决方案</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit" style="margin-top: 0"><img src ="img/icon_menu.png" /><label style="cursor:pointer;margin-bottom:20px;">数据中心智能运维解决方案</label></li>
+                </ul>
+              </div>
+            </li>           
+            <li class="dropdown bar_item" id="dropdown-menu_server_select">
+              <a href="#"><label class="menu_t_SS bar_cn">服务与支持</label><br/><label class="menu_ti" style="cursor:pointer;">Sevice & Support</label></a>
+              <div class="dropdown-menu bar_menu" style="width:270px;" id="dropdown-menu_server">
+                <ul style="float:left;width:130px;">
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">服务介绍</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit"><img src ="img/icon_menu.png" class="rightIcon"/><label>获取支持</label></li>
+                  <li class="titl"><a>资料库</a></li>
+                  <li class="titl"><a>软件下载</a></li>
+                  <li class="titl" style="margin-bottom:20px;"><a>建议反馈</a></li>
+                </ul>
+              </div>
+            </li> 
+            <li class="dropdown bar_item" id="dropdown-menu_com_select">
+              <a href="#"><label class="menu_t bar_cn">公 司</label><br/><label style="cursor:pointer;" class="menu_ti">Detedt</label></a>
+              <div class="dropdown-menu bar_menu" style="width:270px;" id="dropdown-menu_com">
+                <ul style="float:left;width:130px;">
+                  <li class="tit" onclick="onDDOSSystem(4)"><img src ="img/icon_menu.png" /><label style="cursor:pointer;"><a target="_self" style="color: #fff">关于我们</a></label></li>
+                  <li class="tit"><img src ="img/icon_menu.png" /><label style="cursor:pointer;">联系我们</label></li>
+                  <li class="tit" style="margin-bottom:20px;"><img src ="img/icon_menu.png"/><label style="cursor:pointer;">新闻动态</label></li>
+                  <li></li>
+                </ul>
+                <ul style="float:left;">
+                  <li class="tit"><img src ="img/icon_menu.png" class="rightIcon"/><label><a href="http://www.lagou.com/gongsi/j140524.html">加入我们</a></label></li>
+                  <li class="tit"><img src ="img/icon_menu.png" class="rightIcon"/><label>企业文化</label></li>
+                </ul>
+              </div>
+            </li>     
+          </ul>
+          <ul class="navbar-nav right_Btn">   
+            <!-- Navbar Search -->
+            <li onmouseover="onMenuTelOverClick()" onmouseout="onMenuTelOutClick()"><a class="menu_tel"></a></li>
+            <li id="telMsgOpen" style="display:none"><a class="menu_tel_msg"></a></li>
+            <li onmouseover="onMenuUserOverClick()" onmouseout="onMenuUserOutClick()"><a class="menu_user" id="jumpTo"></a></li>
+            <li id="userMsgOpen" style="display:none"><a class="menu_user_msg"></a></li>
+            <li onmouseover="onMenuSearchOverClick()" onmouseout="onMenuSearchOutClick()" onclick="onDDOSSystem(4)"><a class="menu_search"></a></li>
+            <li id="searchMsgOpen" style="display:none"><a class="menu_search_msg"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Home Slider -->
+	    <div id="mainImageSlider_Product" style="text-align: center;">
+        <div class="home-slider" id="mainImageSlider">
+          <!-- Carousel -->
+          <div id="home-slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <!--            <li data-target="#home-slider" id="homeSilder_0" data-slide-to="0" class="active"></li>
+              <li data-target="#home-slider" id="homeSilder_1" data-slide-to="1"></li>
+              <li data-target="#home-slider" id="homeSilder_2" data-slide-to="2"></li>
+              <li data-target="#home-slider" id="homeSilder_3" data-slide-to="3"></li>
+              <li data-target="#home-slider" id="homeSilder_4" data-slide-to="4"></li>-->
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <!-- Slide #1 -->
+              <div class="item active" id="item-1">
+                <!-- <div class="container">
+                  <div class="row">
+      
+                  </div>
+                </div>  -->
+              </div> <!-- / .item -->
+              <!-- Slide #2 -->
+              <!--<div class="item" id="item-2">
+                <div class="container">
+                  <div class="row">
+              
+                  </div> 
+                </div>        
+              </div>-->
+              <!-- Slide #3 -->
+             <!-- <div class="item" id="item-3">
+         
+              </div>-->
+              <!-- Slide #4 -->
+             <!-- <div class="item" id="item-4">
+         
+              </div>-->
+              <!-- Slide #5 -->
+             <!-- <div class="item" id="item-5">
+         
+              </div> -->
+            </div> <!-- / .carousel -->
+            <!-- Controls -->
+            <a class="carousel-arrow carousel-arrow-prev hidden-xs hidden-sm" href="#home-slider" data-slide="prev">
+              <i class="fa fa-angle-left fa-2x"></i>
+            </a>
+            <a class="carousel-arrow carousel-arrow-next hidden-xs hidden-sm" href="#home-slider" data-slide="next">
+              <i class="fa fa-angle-right fa-2x"></i>
+            </a>
+          </div>
+        </div> <!-- / .home-slider -->   
+        <div id="main_ourProduct" style="background-color:#F4F4F4;height:600px;">
+          <div style="height:250.9px;text-align:center;"  class="product_Container">
+            <h2 style="color:#2EA7E0;font-weight:bold;padding-top:114px;margin: 0;">我 们 的 产 品</h2>
+            <h4 style="color:#F7931E;font-weight:bold;letter-spacing: 2px;">OUR &nbsp;PRODUCTS</h4>
+          </div>
+          <div style="">
+            <div style="margin:auto;width:1000px;height:226px;" class="product_Container_2">
+              <!-- <table>
+                  <tr>
+                    <td  onclick="onDDOSSystem(0)" class="product_01"><label>&nbsp;数据中心综合运维<br>&nbsp;&nbsp;监控管理平台</label></td>
+                    <td  onclick="onDDOSSystem(1)" class="product_02"><label>在线服务监控与分析系统</label></td>
+                    <td onclick="onDDOSSystem(2)" class="product_03"><label>IT运维大数据分析与监控系统</label></td>
+                    <td onclick="onDDOSSystem(3)" class="product_04"><label>DDOS攻击检测与防护产品</label></td>
+                  </tr>
+              </table> -->
+              <div class="product_Box">
+                  <div  onclick="onDDOSSystem(0)" class="product_item product_01"><label>&nbsp;数据中心综合运维<br>&nbsp;&nbsp;监控管理平台</label></div>
+                  <div  onclick="onDDOSSystem(1)" class="product_item product_02"><label>在线服务监控与分析系统</label></div>
+                  <div onclick="onDDOSSystem(2)" class="product_item product_03"><label>IT运维大数据分析与监控系统</label></div>
+                  <div onclick="onDDOSSystem(3)" class="product_item product_04"><label>DDOS攻击检测与防护产品</label></div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="earseBGImage" id="earseBGImageID" style="height:600px;">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                <img class="img-responsive show text-center" src="img/earse.png" alt="..." >             
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 rightSolution">
+                <h2 style="color:#2EA7E0;font-weight:bold;margin: 0;text-align: left;margin-left:10%;">得 特 的 解 决 方 案</h2>
+                <h4 style="color:#F7931E;font-weight:bold;letter-spacing: 2px;text-align: left;margin-left:10%;">DETEDT'S &nbsp;SOLUTION</h4>
+                <hr/>
+                <p class="lead text-muted dataCenter" style="cursor: pointer;text-align: left;margin-left:10%;">
+                    <img src ="img/icon_menu.png" />&nbsp;绿色数据中心基础设施整体解决方案
+                </p>
+                <hr/>
+                <p class="lead text-muted" style="cursor: pointer;text-align: left;margin-left:10%;">
+                    <img src ="img/icon_menu.png" />&nbsp;<a class="dataCenterProduct">数据中心智能运维解决方案</a>
+                </p>
+              </div>              
+            </div> 
+        </div> 
+      </div>       
+	  <!-- Tag Banner -->
+      <div id="main_menuProductAll" style="text-align: center;"></div>
+    </div> <!-- / .wrapper -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+	         
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            		<ul>
+                  <li><img src="images/bottom_logo.png" class="bottom_img"/></li>
+                  <li>
+                    <img src="img/footer_tel.png"  class="footer_left_icon"/>
+                    <img src="img/footer_msg.png" class="footer_left_icon"/>
+                    <img src="img/footer_address.png" class="footer_left_icon"/>
+                  </li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li onclick="onDDOSSystem(4)"><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">关于我们</a></li>
+                  <li onclick="onDDOSSystem(4)"><a>公司概况</a></li>
+                  <li onclick="onDDOSSystem(4)"><a>荣誉奖项</a></li>
+                  <li><a>企业文化</a></li>
+                  <li><a>人才招聘</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">如何购买</a></li>
+                  <li><a>在线咨询</a></li>
+                  <li><a>申请试用</a></li>
+                  <li><a>联系我们</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">合作伙伴</a></li>
+                  <li><a>渠道政策</a></li>
+                  <li><a>合作申请</a></li>
+                  <li><a href="http://www.lagou.com/gongsi/j140524.html">加入我们</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">售后支持</a></li>
+                  <li><a>在线咨询</a></li>
+                  <li><a>资料库</a></li>
+                  <li><a>软件下载</a></li>
+                  <li><a>建议反馈</a></li>
+                </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul>
+                  <li><a style="font-family: 'MicrosoftYaHei';color:#45C1E7;font-size:20px;">资源中心</a></h4></li>
+                  <li><a>新闻中心</a></li>
+                  <li><a>成功案例</a></li>
+                  <li><a>资料下载</a></li>
+                  <li><a>活动专题</a></li>
+                </ul>
+          </div>
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 
+        <!-- Copyright -->
+        <div class="footer_copyright">
+            <div class="footer_copy">Copyright &copy; 得特数据 2017 浙ICP备17002056号     |     Power By得特数据<div>
+        </div><!-- / .Copyright -->
+    </footer><!-- / .Footer -->
+	
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+	  <script src="js/SmoothScroll.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        $(".footer_left_icon").bind('mouseover',function(){
+           var index=$(this).index();
+           if(index==0){
+              $(this).attr("src",'images/tel_blue.png');
+           }
+           else if(index==1){
+              $(this).attr("src",'images/mes_blue.png');
+           }
+           else{
+              $(this).attr("src",'images/addr_blue.png');
+           }
+        })
+        $(".footer_left_icon").bind('mouseout',function(){
+           var index=$(this).index();
+           if(index==0){
+              $(this).attr("src",'images/tel_white.png');
+           }
+           else if(index==1){
+              $(this).attr("src",'images/mes_white.png');
+           }
+           else{
+              $(this).attr("src",'images/addr_white.png');
+           }
+        })
+        $("#jumpTo").bind("click",function(){
+          $("#telMsgOpen,#userMsgOpen,#searchMsgOpen").hide();
+          window.location.href="http://www.lagou.com/gongsi/j140524.html";       
+        })
+    </script>
+  </body>
+</html>
